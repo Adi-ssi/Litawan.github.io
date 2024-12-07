@@ -1,0 +1,25 @@
+.paragraph {
+            font-size: 17px;
+            text-align: center;
+            color: black;
+            text-align: justify;
+        text-justify: inter-word;
+        font-weight: normal;
+        margin-bottom: 20px;
+        line-height: 1.6em;
+        }
+        .introduction {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.intro-image {
+    width: 500px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.intro-text {
+    flex: 1;
+}

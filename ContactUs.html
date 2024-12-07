@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Donut Skip Leg Day!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+ <!-- Sidebar -->
+<div class="sidenav">
+    <div class="toggle">&#62;</div> <!-- Toggle icon -->
+    <a href="Home.html">
+        <span class="icon">
+            <img src="css/images/home.png" class="sidenav-icon">
+        </span>
+        <span class="text">Home</span>
+    </a>
+    <a href="Categories.html">
+        <span class="icon">
+            <img src="css/images/category.png" class="sidenav-icon">
+        </span>
+        <span class="text">Category</span>
+    </a>
+    <a href="BMI.html">
+        <span class="icon">
+            <img src="css/images/BMI.png" class="sidenav-icon">
+        </span>
+        <span class="text">BMI</span>
+    </a>
+    <a href="Collection.html">
+        <span class="icon">
+            <img src="css/images/collection.png" class="sidenav-icon">
+        </span>
+        <span class="text">Collection</span>
+    </a>
+    <a href="Tips.html">
+        <span class="icon">
+            <img src="css/images/Tips.png" class="sidenav-icon">
+        </span>
+        <span class="text">Tips</span>
+    </a>
+    <a href="VideoGallery.html">
+        <span class="icon">
+            <img src="css/images/vid.png" class="sidenav-icon">
+        </span>
+        <span class="text">Gallery</span>
+    </a>
+    <a href="ContactUs.html" class="active">
+        <span class="icon">
+            <img src="css/images/contact.png" class="sidenav-icon">
+        </span>
+        <span class="text">Contact Us</span>
+    </a>
+    <a href="#" id="logoutLink">
+        <span class="icon">
+            <img src="css/images/logout.png" class="sidenav-icon">
+        </span>
+        <span class="text">Logout</span>
+    </a>
+</div>
+
+<!-- Banner -->
+<div class="banner">
+    <div class="banner-container">
+        <h1>Contact Us</h1>
+        <p>Have questions or need support? Get in touch with us! We're here to help you on your nutrition and fitness journey. Reach out and let’s connect!</p>
+    </div>
+</div>
+
+<!-- Breadcrumbs -->
+<div class="breadcrumbs">
+  <a href="Home.html">Home</a> > 
+  <a href="ContactUs.html">Contact Us</a>
+</div>
+
+<!-- Contact Form -->
+<div class="contact-form-container">
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <div class="field">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="field">
+                <label for="user_email">Your Email</label>
+                <input type="email" name="user_email" id="user_email" required>
+            </div>
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" required></textarea>
+            </div>
+            <button type="submit" id="button">Send Message</button>
+        </form>
+    </div>
+</div>
+<script src="css/js/mainscript.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="css/js/contact.js"></script>
+</body>
+</html>

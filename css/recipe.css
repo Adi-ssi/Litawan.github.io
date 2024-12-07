@@ -1,0 +1,37 @@
+        h1 {
+            text-align: center;
+            color: #333;
+            padding: 20px 0;
+        }
+
+        .recipe-container {
+            width: 80%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: lightgray;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .ingredients, .instructions {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        ol {
+            list-style-type: decimal;
+            margin-left: 20px;
+        }
+
+        .ingredients li, .instructions li {
+            margin: 10px 0;
+        }

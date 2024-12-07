@@ -1,0 +1,61 @@
+.cooking-tips {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  line-height: 1.6em;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.cooking-tips h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.cooking-tips ul {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cooking-tips ul li {
+  margin-bottom: 5px;
+}
+
+.tips-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border: none;}
+
+.text-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.tips {
+  text-align: justify;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
