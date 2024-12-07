@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Donut Skip Leg Day!</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+body {
+  background-image: url('css/images/start.png');
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.animated-image {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  animation: moveImage 0.75s ease-in-out infinite;
+}
+
+.animated-image:hover {
+  animation: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#loginFormContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+form h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 40px;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #C3B1E1;
+}
+@keyframes moveImage {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+</style>
+</head>
+<body>
+  <img src="css/images/login.png" class="animated-image" id="start-button" alt="Start">
+  <div id="loginFormContainer" class="hidden">
+    <form id="loginForm">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Enter username" required>
+      <input type="password" id="password" placeholder="Enter password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+<script>
+const startButton = document.getElementById('start-button');
+const loginFormContainer = document.getElementById('loginFormContainer');
+startButton.addEventListener('click', () => {
+  loginFormContainer.classList.remove('hidden');
+  startButton.classList.add('hidden');
+});
+document.getElementById('loginForm').addEventListener('submit', function (event) {
+  event.preventDefault();
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+  if (username === 'IIT406' && password === 'LETRAN') {
+    sessionStorage.setItem('loggedIn', 'true');
+    alert('Login successful!');
+    window.location.href = "home.html";
+  } else {
+    alert('Invalid username or password');
+  }
+});
+</script>
+</body>
+</html>
